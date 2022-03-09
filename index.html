@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+    <div style="text-align:center">
+      <h1 class="titulo">AHORCADO</h1>
+      <button class="btn" id="iniciar-juego">JUGAR</button>
+      <button id = "jugar-de-nuevo" class="invisible">JUGAR DE NUEVO</button>
+    </div>
+
+    <table id="tabla-principal" width="100%">
+      <tbody>
+        <tr>
+          <td id= "resultado" value="">
+          </td>
+          <td>
+            <canvas id="ahorcado" class="fondo-canvas" height="400px" width="400px"></canvas>
+          </td>
+          <td id= "letras-incorrectas" value=""></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table height= "60px" width= "400px">
+      <tbody>
+        <tr id="palabra-sorteada">
+        </tr>
+      </tbody>
+    </table>
+
+    <table id="input-letras">
+      <tr>
+        <td>
+          <input id= "ingresar-letra" class="invisible" placeholder="Introducir una letra">  <button id = "verificar-letra" class="invisible">VERIFICAR!</button>
+        </td>
+      </tr>
+    </table>
+
+    <script type="text/javascript" src="canvas.js"></script>
+    <script type="text/javascript" src="ahorcado.js"></script>
+
+  </body>
+
+</html>
